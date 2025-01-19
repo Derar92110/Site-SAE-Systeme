@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Site.css">
+    <title>Compte Rendu VirtualBox</title>
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <a href="#">Virtual<span>Box</span></a>
+            </div>
+            <div class="titre">
+                <h1>Compte Rendu : Installation et Configuration de VirtualBox</h1>
+            </div>
+            <nav class="Navbar">
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#diagramme">Diagramme</a></li>
+                    <li><a href="#etape1">Étape 1</a></li>
+                    <li><a href="#etape2">Étape 2</a></li>
+                    <li><a href="#etape3">Étape 3</a></li>
+                    <li><a href="#etape4">Étape 4</a></li>
+                    <li><a href="#etape5">Étape 5</a></li>
+                    <li><a href="#etape6">Étape 6</a></li>
+                    <li><a href="#etape7">Étape 7</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="Def.html" class="button">Aller à la Page Secondaire</a>
+
+    </header>
+
+    <main class="principale">
+        <section id="introduction" class="etape">
+            <h2>Introduction</h2>
+            <p>Dans ce compte rendu, nous décrivons le processus que nous avons suivi pour installer, configurer et utiliser VirtualBox. Ce travail a été réalisé dans le cadre de la SAE S1.03 visant à comprendre les bases de la virtualisation et à créer des environnements adaptés à différents besoins.</p>
+            <img src="Images/Introduction.png" alt="Image illustrant VirtualBox" class="illustration">
+        </section>
+
+        <section id="diagramme" class="etape">
+            <h2>Diagramme de Gantt</h2>
+            <p>Dans le cadre de notre projet, nous avons élaboré un diagramme de Gantt pour planifier et visualiser les différentes étapes de notre travail. Ce diagramme nous a permis de suivre l'avancement des tâches et de mieux gérer les dépendances entre elles.</p>
+            <ul>
+                <li>Compréhension du Sujet : Nous avons commencé par analyser les besoins et définir les objectifs du projet. Cette étape a été cruciale pour poser les bases du travail.</li>
+                <li>Installation d'une Machine Virtuelle : Nous avons installé une machine virtuelle en utilisant VirtualBox pour simuler l'environnement nécessaire.</li>
+                <li>Configuration de la Machine Virtuelle : Une configuration minutieuse a été réalisée pour garantir que tous les paramètres étaient adaptés à nos besoins.</li>
+                <li>Installation d'Apache : Le serveur Apache a été installé pour accueillir le site web.</li>
+                <li>Déploiement du Site : Une fois le serveur prêt, nous avons déployé le site web qui est celui sur lequel vous êtes en train de lire cettre phrase :).</li>
+                <li>Création d'un Site Web : Nous avons développé le site en intégrant des fonctionnalités et un design moderne, adapté à notre sujet.</li>
+            </ul>
+            <img src="Images/Diagramme.png" alt="Diagramme de Gantt" class="illustration">
+        </section>
+
+        <section id="etape1" class="etape">
+            <h2>1re Étape : Installation de VirtualBox</h2>
+            <p>Nous avons commencé par télécharger VirtualBox à partir du site officiel. Après avoir sélectionné la version adaptée à notre système d'exploitation, nous avons procédé à l'installation en incluant les options suivantes :</p>
+            <ul>
+                <li>Le module principal de VirtualBox</li>
+                <li>Les extensions USB</li>
+                <li>Les pilotes réseau</li>
+            </ul>
+            <img src="Images/Téléchargement.png" alt="Téléchargement de VirtualBox" class="illustration">
+            <p>Une fois l'installation terminée, nous avons redémarré notre ordinateur pour garantir la bonne configuration des pilotes réseau.</p>
+        </section>
+
+        <section id="etape2" class="etape">
+            <h2>2e Étape : Création d'une Machine Virtuelle</h2>
+            <p>Ensuite, nous avons ouvert VirtualBox pour créer une machine virtuelle. Nous avons utilisé les paramètres suivants :</p>
+            <ul>
+                <li><strong>Nom :</strong> Un nom descriptif, par exemple "Ubuntu_Server".</li>
+                <li><strong>Système d'exploitation :</strong> "Linux" et "Ubuntu (64-bit)".</li>
+                <li><strong>RAM :</strong> 2 Go pour répondre aux besoins de base.</li>
+                <li><strong>Disque dur :</strong> 20 Go minimum.</li>
+            </ul>
+            <img src="Images/Création.png" alt="Création de la machine virtuelle" class="illustration">
+            <p>Nous avons également activé l'EFI pour garantir la compatibilité avec des systèmes modernes.</p>
+        </section>
+
+        <section id="etape3" class="etape">
+            <h2>3e Étape : Installation d'un Système d'Exploitation</h2>
+            <p>Nous avons téléchargé des fichiers ISO pour les systèmes d'exploitation que nous souhaitions tester, notamment :</p>
+            <ul>
+                <li><a href="https://ubuntu.com/download">Ubuntu</a> (version 24.04.1 pour sa stabilité).</li>
+                <li><a href="https://www.microsoft.com/software-download/windows10">Windows 10</a>.</li>
+            </ul>
+            <img src="Images/Iso.png" alt="Installation du système d'exploitation" class="illustration">
+            <p>Nous avons suivi les étapes d'installation pour partitionner le disque, configurer les utilisateurs et installer les composants essentiels.</p>
+        </section>
+
+        <section id="etape4" class="etape">
+            <h2>4e Étape : Installation des Additions Invité</h2>
+            <p>Pour améliorer l'intégration entre l'hôte et la machine virtuelle, nous avons installé les "Additions Invité" en activant les options suivantes :</p>
+            <ul>
+                <li>Partage de presse-papiers</li>
+                <li>Résolution d'écran dynamique</li>
+                <li>Dossiers partagés</li>
+            </ul>
+            <img src="Images/Addition.png" alt="Additions invité" class="illustration">
+            <p>L'installation a été effectuée via le menu "Périphériques" de VirtualBox, en insérant l'image CD des Additions Invité.</p>
+        </section>
+
+        <section id="etape5" class="etape">
+            <h2>5e Étape : Personnalisation des Prompts</h2>
+            <p>Pour rendre la ligne de commande plus claire, nous avons personnalisé les prompts de notre machine virtuelle. Voici comment nous avons procédé :</p>
+            <ul>
+                <li>Modification du fichier <code>~/.bashrc</code>.</li>
+                <li>Ajout de la ligne : <code>PS1='\u@\h:\w\$ '</code>.</li>
+            </ul>
+            <p>Cette personnalisation permet d'afficher le nom de l'utilisateur, le nom de la machine et le répertoire courant.</p>
+        </section>
+
+        <section id="etape6" class="etape">
+            <h2>6e Étape : Gestion des Droits Utilisateurs</h2>
+            <p>Nous avons configuré les droits utilisateurs pour garantir un accès sécurisé et adapté. Voici ce que nous avons fait :</p>
+            <ul>
+                <li>Création d'un utilisateur avec <code>sudo adduser nom_utilisateur</code>.</li>
+                <li>Attribution des droits <code>sudo</code> avec <code>sudo usermod -aG sudo nom_utilisateur</code>.</li>
+                <li>Limitation d'accès à certains répertoires via <code>chmod</code>.</li>
+            </ul>
+            <p>Nous avons vérifié les droits avec la commande <code>ls -l</code>.</p>
+        </section>
+
+        <section id="etape7" class="etape">
+            <h2>7e Étape : Configuration du Réseau</h2>
+            <p>Nous avons configuré le réseau de la machine virtuelle en choisissant les options les plus adaptées à nos besoins :</p>
+            <ul>
+                <li><strong>NAT :</strong> Pour fournir un accès Internet via l'hôte.</li>
+                <li><strong>Réseau interne :</strong> Pour limiter la communication aux machines virtuelles.</li>
+                <li><strong>Accès par pont :</strong> Pour connecter directement la machine virtuelle au réseau de l'hôte.</li>
+            </ul>
+            <img src="Images/Réseau.png" alt="Configuration réseau" class="illustration">
+            <p>Nous avons opté pour le mode "Accès par pont", permettant un accès externe au serveur. Nous avons installé Apache sur la machine virtuelle et nous avons utilisé l'IP que la machine virtuelle nous a fournie pour héberger le site'</p>
+            <ul>
+                <li><strong>Installation :</strong> Installation d'un serveur SSH pour nous connecter au serveur</li>
+                <li><strong>Configuration :</strong> Nous avons configuré Apache avec le tutoriel de Monsieur Giustignano</li>
+                <li><strong>Déploiement :</strong> Nous avons déployé le site grâce à Webstorm</li>
+            </ul>
+        </section>
+
+        <section id="conclusion" class="etape">
+            <h2>Conclusion</h2>
+            <p>Ce compte rendu décrit les étapes que nous avons suivies pour installer et configurer VirtualBox. Ce projet nous a permis d'acquérir des compétences pratiques en virtualisation, utiles pour tester des applications et expérimenter différents systèmes sans affecter notre machine principale.</p>
+            <img src="Images\Fin.jpeg" alt="Résumé du guide" class="illustration">
+        </section>
+
+        <button id="backToTop">Retour en haut</button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Guide VirtualBox</p>
+            <p>IUT Rives de Seine - BUT Informatique</p>
+            <p>&copy; 2025 - Derar, Samir & Elyes</p>
+        </div>
+    </footer>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
